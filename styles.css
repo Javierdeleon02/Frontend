@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+form, .content-box, .table-box {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="month"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #1a237e;
+  color: white;
+  padding: 10px 16px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #3949ab;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+ul li {
+  background: #e8eaf6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 4px solid #3f51b5;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #3f51b5;
+  color: white;
+}
+
+td {
+  background-color: #fafafa;
+}
+
+a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tarjetas horizontales de películas */
+.peliculas-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.pelicula-card {
+  flex: 0 0 auto;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pelicula-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.pelicula-info {
+  padding: 15px;
+}
+
+.pelicula-info h3 {
+  font-size: 18px;
+  color: #1a237e;
+  margin-bottom: 8px;
+}
+
+.pelicula-info p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
