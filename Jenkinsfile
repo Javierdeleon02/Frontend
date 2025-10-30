@@ -19,8 +19,8 @@ pipeline {
                 withSonarQubeEnv('SonarQubeServer') { // Nombre configurado en "Manage Jenkins > System"
                     bat """
                         "%SCANNER_HOME%\\bin\\sonar-scanner.bat" ^
-                        -Dsonar.projectKey=Proyecto_ACS_CSS ^
-                        -Dsonar.projectName="Proyecto ACS - CSS" ^
+                        -Dsonar.projectKey=Proyecto_ACS^
+                        -Dsonar.projectName="Proyecto_ACS" ^
                         -Dsonar.sources=Frontend ^
                         -Dsonar.inclusions=**/*.css ^
                         -Dsonar.exclusions=Frontend\\node_modules/**,Frontend\\dist/** ^
